@@ -7,6 +7,7 @@
 	</head>
 
 	<body>
+		<?php include 'includes/book.php';?>
 		<header>
 			<h1>THE BOOKWORM STORE</h1>
 			<nav>
@@ -27,29 +28,29 @@
 
 	  				<div class="column">
 	  					<img src="images/hunger-games.jpeg" style="width:60%">
-	  					<h5>TITLE</h5>
-	  					<h5>by AUTHOR</h5>
+	  					<h5><?= $book1->title ?></h5> 
+	  					<h5><?= $book1->author ?></h5>
 	  					<!-- SHOW STAR RATINGS -->
-	  					<h5><span class="emphasized">CHECK STOCK</span>
-						<h5>$PRICE</h5>
+						<h5><span class="emphasized"><?= $book1->checkInStock() ?></span>
+						<h5><?= $book1->price ?></h5>
 	  				</div>
 
 	  				<div class="column">
 	  					<img src="images/catching-fire.jpeg" style="width:60%">
-	  					<h5>TITLE</h5>
-	  					<h5>by AUTHOR</h5>
+	  					<h5><?= $book2->title ?></h5>
+	  					<h5><?= $book2->author ?></h5>
 	  					<!-- SHOW STAR RATINGS -->
-	  					<h5><span class="emphasized">CHECK STOCK</span>
-						<h5>$PRICE</h5>
+	  					<h5><span class="emphasized"><?= $book2->checkInStock() ?></span>
+						<h5><?= $book2-> ?></h5>
 	  				</div>
 
 	  				<div class="column">
 	  					<img src="images/mockingjay.jpeg" style="width:60%">
-	  					<h5>TITLE</h5>
-	  					<h5>by AUTHOR</h5>
+	  					<h5><?= $book3->title ?></h5>
+	  					<h5><?= $book3->author ?></h5>
 	  					<!-- SHOW STAR RATINGS -->
-	  					<h5><span class="emphasized">CHECK STOCK</span>
-						<h5>$PRICE</h5>
+	  					<h5><span class="emphasized"><?= $book3->checkInStock() ?></span>
+						<h5><?= $book3->price ?></h5>
 	  				</div>
 				</div>
 			</div>
